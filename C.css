@@ -1,0 +1,228 @@
+:root{
+    --main-color--:#3e6787;
+    --sec-color--:#3e3e34;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:#def4e4
+}
+h3 , h1 ,h2{
+    color: #1a3f5c;
+}
+h3 + p, h2 + p , h1 + p{
+    color: #8d8d6b;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding:0 70px ;
+    text-align: -webkit-center;
+}
+i{
+    color: var(--main-color--);
+    font-size: 50px;
+}
+img{
+    width: 560px;
+}
+.text{
+    max-width: 532px;
+    margin: 41px 0;
+    line-height: 35px;
+}
+@media(max-width:767px){
+    .container{
+        padding:0 15px;
+    }
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sgins{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feet{
+        padding: 30px 0;
+    }
+    .show, .foot  , .feet{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+        height: 400px;
+    }
+    .section img{
+        width: 240px;
+    }
+    h3 , h1 ,h2{
+        font-size: 20px;
+    }
+}
+/*glopalend*/
+.head{
+    position: relative;
+}
+.head img{
+    width: 100%;
+}
+.head div{
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 35px);
+    width: 71px;
+    height: 72px;
+    background-image: url(logo.jpg)
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.buttons .b{
+    background-color: var(--main-color--);
+    color: #ffffff;
+    width: 170px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 18px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.buttons .b:hover div{
+    width: 170px;
+    height: 52px;
+    background-color: #333f5c;
+    color: var(--main-color--);
+    border-radius: 20px;
+}
+.show{
+    display: flex;
+    justify-content: space-around;
+}
+.show .img-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 315px;
+}
+.show .img-text div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    word-spacing: 2px;
+    line-height: 20px;
+}
+.contain{
+    text-align: center;
+    padding: 0 60px;
+}
+.foot {
+    display: flex;
+    justify-content: space-around;
+}
+.foot .text{
+    max-width: 300px;
+    margin: 0;
+}
+.foot .text div{
+    background-image: url(Screenshot4.jpg);
+    width: 58px;
+    height: 45px;
+    margin: auto;
+}
+.foot .text:nth-child(2) div{
+    background-image: url(Screenshot5.jpg);
+    width: 37px;
+    height: 49px
+}
+.foot .text:last-child div{
+    background-image: url(Screenshot6.jpg);
+    width: 39px;
+    height: 51px
+}
+.contain .logo img{
+    width: 140px;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+}
+.l-head{
+    margin-top: 20px;
+}
+.feet{
+    height: fit-content;
+    background-color: #9abba3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+.feet .logo-feet{
+    background-image: url(feet-logo.jpg);
+    width: 51px;
+    height: 50px
+}
+.feet .sgins{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap
+}
+.feet .sgins div{
+    width: 107px;
+    height: 51px;
+    text-align: center;
+    cursor: pointer;
+    color: #3e6787;
+    text-shadow: 0px 0px 1px black
+}
+.feet .sgins div:hover p{
+    font-size: 15px;
+    color:#fff ;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    cursor: pointer
+}
+.nav i:hover{
+    font-size: 45px;
+}
+.nav a{
+    background-size: 50px;
+    width:50px;
+    height: 50px;
+}
+.nav a:first-child{
+    background-image: url(Screenshot.jpg)
+}
+.nav a:nth-child(2){
+    background-image: url(Screenshot3.jpg)
+}
+.nav a:last-child{
+    background-image: url(Screenshot2.jpg)
+}
+.nav a:hover{
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+}
